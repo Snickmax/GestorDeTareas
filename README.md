@@ -6,11 +6,14 @@ Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, ma
 
 ## Tecnologías Utilizadas
 
-- **Python**: Lenguaje principal del proyecto.
-- **SQLAlchemy**: ORM (Object-Relational Mapping) para interactuar con la base de datos PostgreSQL.
-- **PostgreSQL**: Base de datos relacional para el almacenamiento persistente de tareas.
-- **dotenv**: Para cargar las configuraciones desde un archivo `.env`.
-- **psycopg2**: Controlador de PostgreSQL para Python.
+## Tecnologías Utilizadas
+
+- **Python**: Lenguaje principal del proyecto, utilizado para desarrollar la lógica del gestor de tareas.
+- **Tkinter**: Biblioteca estándar de Python para la creación de interfaces gráficas de usuario (GUI).
+- **SQLAlchemy**: ORM (Object-Relational Mapping) para interactuar con la base de datos PostgreSQL, facilitando el trabajo con objetos en lugar de consultas SQL directas.
+- **PostgreSQL**: Base de datos relacional utilizada para el almacenamiento persistente de tareas, proporcionando un almacenamiento estructurado y seguro.
+- **dotenv**: Permite cargar configuraciones desde un archivo `.env`, facilitando la gestión de variables de entorno como las credenciales de la base de datos y otros parámetros sensibles.
+- **psycopg2**: Controlador de PostgreSQL para Python, usado para la comunicación directa con la base de datos desde Python.
 
 ---
 
@@ -19,14 +22,16 @@ Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, ma
 ```
 .
 ├── main.py                     # Archivo principal para ejecutar la aplicación
-├── main.py                     # Archivo para migrar base de datos
+├── migrate.py                     # Archivo para migrar base de datos
 ├── app/                        # Módulo de la aplicación
 │   ├── models.py               # Definición de la tabla y modelo de datos
-│   └── controllers.py          # Controladores para gestionar la lógica de las tareas
+│   ├── controllers.py          # Controladores para gestionar la lógica de las tareas
+│   └── ui.py                   # Interfaz gráfica de usuario
 ├── config/                     # Configuraciones del proyecto
 │   └── database.py             # Configuración de la base de datos
 ├── .env                        # Archivo de variables de entorno
 └── requirements.txt            # Dependencias del proyecto
+
 ```
 
 ---
@@ -107,5 +112,3 @@ pip install -r requirements.txt
 
 3. **Paquetes no instalados**:
    - Verifica que instalaste las dependencias correctamente.
-
-
