@@ -40,7 +40,7 @@ Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, ma
 
 ### 1. Pre-requisitos
 
-- Python 3.8 o superior.
+- Python 3.12 ideal.
 - PostgreSQL instalado y configurado.
 - Un entorno virtual de Python (opcional, pero recomendado).
 
