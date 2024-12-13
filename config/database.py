@@ -12,7 +12,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 # DATABASE_URL = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
 
-DATABASE_URL = f"sqlite:///dataBase.sqlite"
+DATABASE_URL = f"sqlite:///tareas.db"
 
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
