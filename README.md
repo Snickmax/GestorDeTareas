@@ -44,7 +44,7 @@ Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, ma
 - PostgreSQL instalado y configurado.
 - Un entorno virtual de Python (opcional, pero recomendado).
 
-### 2. Configurar la Base de Datos
+### 2. Configurar la Base de Datos si usas postgreSQL
 
 1. Crear una base de datos PostgreSQL llamada `desafio` (o el nombre que desees).
 2. Configura las credenciales en un archivo `.env` en la raíz del proyecto:
