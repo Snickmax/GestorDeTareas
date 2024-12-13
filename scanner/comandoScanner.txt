@@ -1,0 +1,1 @@
+sonar-scanner.bat -D"sonar.projectKey=YOURPROJECT" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=YOURKEY" -D"sonar.exclusions=**/venv/**,**/__pycache__/**"
