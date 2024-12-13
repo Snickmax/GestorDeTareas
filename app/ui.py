@@ -6,6 +6,8 @@ from app.controllers import (
 )
 
 class TaskManagerApp:
+    INFO_TITLE = "Información"  # Definimos la constante aquí
+    
     def __init__(self, root):
         self.root = root
         self.root.title("Gestor de Tareas")
@@ -37,7 +39,7 @@ class TaskManagerApp:
             description = description_entry.get()
             if title.strip():
                 message = agregar_tarea(title, description)
-                messagebox.showinfo("Información", message)
+                messagebox.showinfo(self.INFO_TITLE, message)
                 window.destroy()
             else:
                 messagebox.showwarning("Advertencia", "El título no puede estar vacío.")
@@ -84,7 +86,7 @@ class TaskManagerApp:
                 task_text = task_listbox.get(selected[0])
                 task_id = task_mapping[task_text]
                 message = action(task_id)
-                messagebox.showinfo("Información", message)
+                messagebox.showinfo(self.INFO_TITLE, message)
                 window.destroy()
             else:
                 messagebox.showwarning("Advertencia", "Seleccione una tarea.")
@@ -94,14 +96,9 @@ class TaskManagerApp:
     def save_backup(self):
         file_name = "backup_tareas.json"
         message = guardar_tareas_en_archivo(file_name)
-        messagebox.showinfo("Información", message)
+        messagebox.showinfo(self.INFO_TITLE, message)
 
     def load_backup(self):
         file_name = "backup_tareas.json"
         message = cargar_tareas_desde_archivo(file_name)
-        messagebox.showinfo("Información", message)
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = TaskManagerApp(root)
-    root.mainloop()
+        messagebox.showinfo(self.INFO_TITLE, message)
