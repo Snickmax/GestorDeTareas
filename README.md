@@ -56,8 +56,7 @@ DB_HOST=localhost
 1. Clona el repositorio o descarga el código.
 2. Crea un entorno virtual (opcional):
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/MacOS
+   python virtualenv venv
    venv\Scripts\activate   # Windows
    ```
 3. Instala las dependencias:
