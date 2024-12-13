@@ -19,12 +19,11 @@ Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, ma
 ```
 .
 ├── main.py                     # Archivo principal para ejecutar la aplicación
+├── main.py                     # Archivo para migrar base de datos
 ├── app/                        # Módulo de la aplicación
-│   ├── __init__.py             # Archivo de inicialización del módulo
 │   ├── models.py               # Definición de la tabla y modelo de datos
 │   └── controllers.py          # Controladores para gestionar la lógica de las tareas
 ├── config/                     # Configuraciones del proyecto
-│   ├── __init__.py             # Archivo de inicialización del módulo
 │   └── database.py             # Configuración de la base de datos
 ├── .env                        # Archivo de variables de entorno
 └── requirements.txt            # Dependencias del proyecto
