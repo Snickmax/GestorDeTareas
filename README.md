@@ -1,5 +1,6 @@
 # Gestor de Tareas
 
+- Victor Ignacio Ibarra Espinoza
 Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, marcar como completadas, eliminar tareas y guardarlas o cargarlas desde un archivo JSON. También utiliza una base de datos PostgreSQL para almacenar las tareas de forma persistente.
 
 ---
