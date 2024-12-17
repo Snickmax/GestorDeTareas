@@ -5,8 +5,11 @@
 Este es un proyecto en Python para gestionar tareas. Permite agregar, listar, marcar como completadas, eliminar tareas y guardarlas o cargarlas desde un archivo JSON. También utiliza una base de datos PostgreSQL para almacenar las tareas de forma persistente.
 
 ---
+## capturas realizadas
 
-## Tecnologías Utilizadas
+![Screen 1](https://github.com/Snickmax/GestorDeTareas/blob/main/scanner/Screenshot%202024-12-13%20183814.png)
+
+![Screen 2](https://github.com/Snickmax/GestorDeTareas/blob/main/scanner/Screenshot%202024-12-13%20183910.png)
 
 ## Tecnologías Utilizadas
 
